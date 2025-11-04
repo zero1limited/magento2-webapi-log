@@ -1,5 +1,5 @@
 {
-    "name": "vladflonta/magento2-webapi-log",
+    "name": "zero1/magento2-webapi-log",
     "description": "Logger for webapi REST requests.",
     "authors":[{
         "name": "Vlad Flonta",
