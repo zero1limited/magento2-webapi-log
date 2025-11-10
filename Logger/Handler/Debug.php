@@ -8,6 +8,8 @@
 
 namespace VladFlonta\WebApiLog\Logger\Handler;
 
+use Monolog\LogRecord;
+
 class Debug extends \Magento\Framework\Logger\Handler\Debug
 {
     /** @var string */
@@ -37,10 +39,10 @@ class Debug extends \Magento\Framework\Logger\Handler\Debug
     }
 
     /**
-     * @param array $record
+     * @param \Monolog\LogRecord $record
      * @throws \Magento\Framework\Exception\LocalizedException
      */
-    protected function write(array $record): void
+    protected function write(LogRecord $record): void
     {
         if (!isset($record['context']['is_api']) || !$record['context']['is_api']) {
             parent::write($record);
