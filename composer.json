@@ -19,5 +19,8 @@
         "psr-4": {
             "VladFlonta\\WebApiLog\\": ""
         }
+    },
+    "replace": {
+        "vladflonta/magento2-webapi-log": "*"
     }
 }
